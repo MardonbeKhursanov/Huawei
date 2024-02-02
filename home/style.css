@@ -19,7 +19,7 @@
 }
 .login .ul{
     display: flex;
-    padding: 3px 0px;
+    padding: 0px 0px;
     justify-content: end;
     gap: 30px;
     color: white;
@@ -28,23 +28,26 @@
 }
 .ul li{
     cursor: pointer;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 .corporate{
     width: 100%;
-    height: auto;
     background-color: whitesmoke;
     height: 0;
     overflow: hidden;
     transition: all .5s linear;
 }
-.corporate .container {
+.corporate .corp_boxes {
     display: flex;
     justify-content: flex-start;
     padding: 50px 0px;
     flex-wrap: wrap;
 }
 .copr_box{
-    width: 22%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -58,6 +61,9 @@
 .copr_box h3 a{
     color: black;
 }
+.copr_box h3 a:hover{
+    text-decoration-line: underline;
+}
 .angle-right{
     transform: rotate(90deg);
     transition: all .2s linear;
@@ -66,9 +72,55 @@
     transform: translateX(10px) rotate(90deg);
     color:  rgb(228, 37, 4);
 }
+.angle-corp{
+    transition: all .2s linear;
+}
 body.corpo .corporate{
     height: 200px;
 }
-body.corpo .ul li i{
+body.corpo .ul li .angle-corp{
     transform: rotate(180deg);
+}
+.region_set{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.regions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.region{
+    background-color: whitesmoke;
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.region span{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.region span:hover{
+    text-decoration-line: underline;
+    opacity: 1;
+}
+body.tillar .region{
+    padding: 20px 0px;
+    height: 400px;
+}
+.angle-reg {
+    transition: all .2s linear;
+}
+body.tillar .angle-reg{
+    transform: rotate(180deg);
+}
+body.corpo #corporate_id{
+    background-color: white;
+    color: gray;
+}
+body.tillar #davlat{
+    background-color: white;
+    color: gray;
 }

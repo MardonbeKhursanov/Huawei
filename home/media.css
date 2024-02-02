@@ -1,0 +1,55 @@
+@media screen and (max-width: 900px){
+    .copr_box{
+        width: 32%;
+    }
+    .copr_box h3{
+        font-size: 16px;
+    }
+    .copr_box p{
+        font-size: 13px;
+    }
+    .corporate .corp_boxes{
+        justify-content: space-between;
+    }
+    .region_set {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        justify-content: start;
+    }
+    .region{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body.corpo .corporate{
+        height: 50vh;
+        width: 100%;
+        overflow: scroll;
+    }
+    .corporate .corp_boxes{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+    .copr_box{
+        gap: 5px;
+        width: 100%;
+    }
+    .login .ul{
+        justify-content: space-between;
+    }
+    .region_set .region p{
+        text-align: center;
+        align-items: center;
+    }
+    .region_set{
+        justify-content: start;
+    }
+    .region h2{
+        font-size: 16px;
+    }
+}
