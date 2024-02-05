@@ -7,11 +7,11 @@
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
 }
-.container{
+#container{
     width: 90%;
     margin: 0 auto;
 }
-.header_title IMG{
+.header_title img{
     width: 100%;
 }
 .login{
@@ -108,7 +108,7 @@ body.corpo .ul li .angle-corp{
 }
 body.tillar .region{
     padding: 20px 0px;
-    height: 400px;
+    height: 450px;
 }
 .angle-reg {
     transition: all .2s linear;
@@ -123,4 +123,60 @@ body.corpo #corporate_id{
 body.tillar #davlat{
     background-color: white;
     color: gray;
+}
+nav{
+    padding: 20px 0px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.211);
+}
+.nav_bar img{
+    width: 8%;
+}
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_bar #search_bar {
+    position: absolute;
+    right: 5%; 
+    display: flex;
+    align-items: center;
+    width: 15%;
+    transform: scale(0);
+    transform-origin: right;
+    transition: all .2s linear;
+
+}
+.nav_bar button {
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+}
+#nav_ul{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+#nav_ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#search_bar i{
+    font-size: 25px;
+    border-left: none;
+    padding: 2.5px 10px;
+}
+#search_bar input{
+    outline: none;
+    border-right: none;
+    border: 1px solid black;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 16px;
+}
+#srch_btn{
+    transition: all .2s linear;
 }
