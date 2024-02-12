@@ -20,6 +20,19 @@
     .region{
         overflow: scroll;
     }
+    .title{
+        gap: 5vh;
+        flex-wrap: wrap;
+    }
+    .title img{
+        width: 100%;
+    }
+    .title_text{
+        width: 100%;
+    }
+    .nav_bar img{
+        width: 10vh;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -42,6 +55,9 @@
     .login .ul{
         justify-content: space-between;
     }
+    #nav_ul{
+        display: none;
+    }
     .region_set .region p{
         text-align: center;
         align-items: center;
@@ -51,5 +67,18 @@
     }
     .region h2{
         font-size: 16px;
+    }
+}
+
+
+
+
+
+@media screen and (max-height: 500px){
+    .title h1{
+        font-size: 10vh;
+    }
+    .title p{
+        font-size: 7vh;
     }
 }

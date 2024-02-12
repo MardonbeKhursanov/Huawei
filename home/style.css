@@ -7,7 +7,7 @@
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
 }
-#container{
+.container{
     width: 90%;
     margin: 0 auto;
 }
@@ -130,7 +130,7 @@ nav{
     border-bottom: 1px solid rgba(0, 0, 0, 0.211);
 }
 .nav_bar img{
-    width: 8%;
+    width: 15vh;
 }
 .nav_bar{
     display: flex;
@@ -142,7 +142,6 @@ nav{
     right: 5%; 
     display: flex;
     align-items: center;
-    width: 15%;
     transform: scale(0);
     transform-origin: right;
     transition: all .2s linear;
@@ -174,9 +173,48 @@ nav{
     border-right: none;
     border: 1px solid black;
     padding: 2px 5px;
-    width: 100%;
     font-size: 16px;
 }
 #srch_btn{
     transition: all .2s linear;
 }
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 0vh;
+}
+.title img{
+    width: 45vw;
+}
+.title_text{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title_text h1{
+    font-size: 6vh;
+    width: 100%;
+    text-align: center;
+}
+.title_text p{
+    font-size: 4vh;
+}
+.title_text button{
+    padding: 7px 5vh;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all .1s linear;
+}
+.title_text button:hover{
+    background-color: #c7000b;
+    color: white;
+    border-color: #c7000b;
+}
+.header_title{
+    background-image: linear-gradient(white, white, rgba(0, 0, 0, 0.179));
+}
+
