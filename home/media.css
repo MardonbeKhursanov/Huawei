@@ -68,6 +68,12 @@
     .region h2{
         font-size: 16px;
     }
+    .title_text h1{
+        font-size: 5vh;
+    }
+    .title_text p{
+        font-size: 3vh;
+    }
 }
 
 
