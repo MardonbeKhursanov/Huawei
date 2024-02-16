@@ -245,24 +245,26 @@ nav{
     justify-content: space-between;
 }
 .new_boxes div:first-child{
-    width: 50vw;
+    width: 52vw;
 }
 .new_box{
     margin-top: 3vh;
     overflow: hidden;
+    cursor: pointer;
 }
 .new_box img{
     width: 100%;
     transition: all .2s linear;
+    object-fit: cover;
 }
 .new_boxes div:nth-child(2){
-    width: 24vw;
+    width: 25vw;
 }
 .new_boxes div:nth-child(3){
-    width: 24vw;
+    width: 25vw;
 }
 .new_boxes div:nth-child(4){
-    width: 50vw;
+    width: 52vw;
 }
 .new_boxes div:nth-child(5){
     width: 25vw;
@@ -277,4 +279,57 @@ nav{
 .new_box:hover img{
     transform: scale(1.03);
     background-image: linear-gradient(white, white, rgba(0, 0, 0, 0.291));
+}
+.text{
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-15vh) translateX(2vw);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .2s linear;
+    color: white;
+    width: 100%;
+    
+}
+.text a{
+    opacity: 0;
+    transition: all .2s linear;
+    color: white;
+}
+.new_box:hover .text{
+    transform: translateY(-170px) translateX(2vw);
+}
+.new_box:hover .text a{
+    opacity: 1;
+}
+.text h1 {
+    font-size: 1.5vw;
+}
+.text p{
+    font-size: 2vh;
+}
+#center{
+    display: flex;
+    align-items: center;
+    height: 65vh;
+}
+#center button{
+    padding: .8vh 5vh;
+    font-size: 16px;
+    background-color: #c7000b;
+    border: none;
+    color: white;
+    transform: translate(5vw);
+}
+#center button:hover{
+    background-color: #8a0209;
+}
+#center img{
+    position: absolute;
+    z-index: -1;
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
 }

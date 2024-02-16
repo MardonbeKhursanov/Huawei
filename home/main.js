@@ -25,4 +25,13 @@ x_srch.addEventListener('click', function(){
 
 
 
+let imgs = document.getElementById("media_carousel")
+let rightBtn = document.getElementById('right')
+let leftBtn = document.getElementById('left')
+let images = document.querySelectorAll('#media_carousel #m_img')
+let idx = 0
 
+function changeImage(){
+    imgs.style.transform = "translateX(-100vh)"
+}
+rightBtn.addEventListener('click',)
