@@ -33,6 +33,13 @@
     .nav_bar img{
         width: 10vh;
     }
+    #center .container{
+        align-items: center;
+        text-align: center;
+    }
+    #center h2{
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -73,6 +80,12 @@
     }
     .title_text p{
         font-size: 3vh;
+    }
+    .event_box{
+        width: 100%;
+    }
+    .event_last{
+        width: 100%;
     }
 }
 

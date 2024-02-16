@@ -227,6 +227,7 @@ nav{
     justify-content: center;
     font-size: 2.5vh;
     margin-bottom: 10vh;
+    margin-top: 5vh;
 }
 .section_title h2{
     display: flex;
@@ -311,25 +312,116 @@ nav{
 }
 #center{
     display: flex;
-    align-items: center;
-    height: 65vh;
+    align-items: start;
+    height: 60vh;
+    background-image: url(./images/section_img.webp);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+#center .container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    padding: 10vh 0vh;
 }
 #center button{
-    padding: .8vh 5vh;
+    padding: .5vw 2vw;
     font-size: 16px;
     background-color: #c7000b;
     border: none;
     color: white;
-    transform: translate(5vw);
 }
 #center button:hover{
     background-color: #8a0209;
 }
-#center img{
-    position: absolute;
-    z-index: -1;
-    height: 65vh;
+#center h2{
+    font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+#center h2::after{
+    content: '';
+    width: 30%;
+    height: 3px;
+    background-color: #c7000b;
+    transform: translateX(5px);
+}
+#center p{
+    font-size: 2vh;
+}
+.events_box{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: start;
+}
+.event_box {
+    width: 450px;
+    background-color: whitesmoke;
+}
+.event_box img{
     width: 100%;
-    object-fit: cover;
-    object-position: left;
+    transition: all .2s linear;
+}
+.event_txt{
+    width: 100%;
+    padding: 20px 20px 60px 20px;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.event_txt p {
+    display: flex;
+    gap: 20px;
+}
+.event_box div{
+    overflow: hidden;
+}
+.event_box:hover{
+    background-color: rgba(218, 218, 218, 0.436);
+    cursor: pointer;
+}
+.event_box:hover img{
+    transform: scale(1.05);
+}
+.event_last{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    cursor: pointer;
+}
+.event_last h3{
+    display: flex;
+    flex-direction: column;
+}
+.event_last h3 span{
+    opacity: .8;
+    font-weight: 200;
+}
+.event_last h3:hover{
+    color: #c7000b;
+}
+.event_btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    gap: 50px;
+}
+.event_btn button{
+    padding: 7px 5vh;
+    background-color: transparent;
+    border: 1px solid;
+    font-size: 16px;
+}
+.event_btn button:hover{
+    background-color: #c7000b;
+    border-color: #c7000b;
+    color: white;
 }
