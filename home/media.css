@@ -1,3 +1,76 @@
+@media screen and (max-width: 1000px){
+    .new_box:first-child{
+        display: none;
+    }
+    .new_box:nth-child(2){
+        display: none;
+    }
+    .new_box:nth-child(3){
+        display: none;
+    }
+    .new_boxes{
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .new_box{
+        width: 38vw !important; 
+        background-color: whitesmoke;
+    }
+    .new_box .text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0);
+        color: #000;
+        padding: 20px 20px;
+        width: 100% !important;
+    }
+    .text h1{
+        font-size: 3vw;
+    }
+    .text p{
+        font-size: 2vw;
+    }
+    .new_box:hover .text{
+        transform: translate(0);
+    }
+    .text a{
+        opacity: 1;
+        color: black;
+        font-size: 2vw;
+    }
+    .new_box img{
+        height: 25vw;
+    }
+    .footer_nav {
+        flex-direction: column;
+        text-align: start;
+    }
+    .item ul li::after{
+        content: '';
+        margin-top: 5px;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.194);
+    }
+    .item ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .item h3::after{
+        content: '';
+        margin-top: 5px;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.194);
+    }
+    .item h3{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 900px){
     .copr_box{
         width: 32%;
@@ -43,6 +116,9 @@
 }
 
 @media screen and (max-width: 600px){
+    .container {
+        width: 95%;
+    }
     body.corpo .corporate{
         height: 50vh;
         width: 100%;
@@ -87,6 +163,31 @@
     .event_last{
         width: 100%;
     }
+    .new_box{
+        width: 100% !important;
+        height: auto;
+    }
+    .new_box img{
+        height: auto;
+    }
+    .text h1{
+        font-size: 5vw;
+    }
+    .text p{
+        font-size: 3vw;
+    }
+    .text a{
+        font-size: 3vw;
+        display: block;
+        text-align: end;
+    }
+    .event_btn{
+        font-size: 3vw;
+    }
+    .item {
+        margin-top: 30px;
+    }
+    
 }
 
 
