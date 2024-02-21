@@ -1,0 +1,16 @@
+@media screen and (max-width: 1300px) {
+    nav ul:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #consumer_boxes{
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header_title img{
+        width: 100%;
+    }
+}

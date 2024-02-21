@@ -22,5 +22,3 @@ x_srch.addEventListener('click', function(){
     srch.style.transform = 'scale(1)'
     document.getElementById('nav_ul').style.transform = 'scale(1)'
 })
-
-let 
