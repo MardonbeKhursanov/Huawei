@@ -267,3 +267,66 @@ nav ul li a:hover::after{
 .tel-box:hover img{
     transform: scale(1.1);
 }
+.series-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#p_series * img{
+    border-radius: 10px ;
+}
+.series-box img:nth-child(1){
+    width: 44%;
+}
+.s-box {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s-box img:first-child{
+    width: 50%;
+}
+.s-box div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+    gap: 10px;
+}
+.s-box div:last-child img{
+    width: 100%;    
+}
+#p_series {
+    background-color: whitesmoke;
+}
+#p_series .container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px ;
+}
+.p_text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+}
+.p_text .title{
+    padding: 0;
+    color: black;
+}
+.p_text button{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    transition: opacity .2s linear;
+}
+.p_text button:hover{
+    opacity: .9;
+}
