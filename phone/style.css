@@ -172,47 +172,25 @@ nav ul li a:hover::after{
 }
 .buttons-container{
     width: 60vw;
-    position: absolute;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-32vw);
-    z-index: 1;
+    transform: translateY(-20vw);
 }
 .slider{
     width: 100%;
     overflow: hidden;
 }
 .buttons-container button{
-    height: 30vw;
-    width: 5vh;
+    width: 20vh;
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 2vw;
+    font-size: 35px;
 }
 .buttons-container button:hover{
     /* background-color: rgba(0, 0, 0, 0.216); */
     box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.216);
-}
-.opacity{
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-}
-.opacity div:first-child{
-    width: 15%;
-    height: 100%;
-    background-color: rgba(240, 248, 255, 0.252);
-    box-shadow: 100px 0px 50px rgba(240, 248, 255, 0.252);
-}
-.opacity div:last-child{
-    width: 15%;
-    height: 100%;
-    background-color: rgba(240, 248, 255, 0.252);
-    box-shadow: -100px 0px 50px rgba(240, 248, 255, 0.252);
 }
 .tel-box{
     width: 20vw;
@@ -329,4 +307,121 @@ nav ul li a:hover::after{
 }
 .p_text button:hover{
     opacity: .9;
+}
+#srch-btn{
+    cursor: pointer;
+}
+.search{
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    background-color: white;
+    display: none;
+    z-index: 1;
+    height: 100vh;
+}
+body.active-srch .search{
+    display: block;
+}
+.search .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.src-boxes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.src-box div:first-child{
+    width: 30vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px 0px;
+}
+.src-box:hover div:first-child img{
+    transform: scale(1.1);
+}
+.src-box div:first-child img{
+    width:  50%;
+    transition: transform .2s linear;
+}
+.src-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+.src-box:hover{
+    text-decoration-line: underline;
+}
+#x-btn{
+    display: flex;
+    justify-content: end;
+}
+#x-btn span{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.106);
+    cursor: pointer;
+}
+.src-input{
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.257);
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.src-input input{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 0px 25px;
+    font-size: 1.5vw;
+    border-radius: 10px;
+}
+.src-input i{
+    width: 10%;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+#menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    transition: all .2s linear;
+    display: none;
+}
+#menu span{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.343);
+    transition: all .2s linear;
+}
+body.active #menu{
+    gap: 0px;
+}
+body.active #menu span:first-child{
+    transform: rotate(45deg) translateX(1px);
+}
+body.active #menu span:last-child{
+    transform: rotate(-45deg) translateX(1px);
 }

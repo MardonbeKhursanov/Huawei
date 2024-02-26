@@ -33,6 +33,9 @@
     #container ul{
         display: none;
     }
+    #menu{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -54,6 +57,15 @@
     .s-box img:first-child{
         width: 50%;
     }
+    .src-input{
+        width: 100%;
+    }
+    .src-input input{
+        font-size: 20px;
+    }
+    .src-input i{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 900px) {
     .header_title img{
@@ -61,10 +73,6 @@
     }
     .container2{
         width: 80%;
-    }
-    .buttons-container{
-        width: 80%;
-        transform: translateY(-40vw);
     }
     .title{
         font-size: 2.5vh;
@@ -77,10 +85,35 @@
         width: 10%;
         box-shadow: -20px 0px 50px rgba(240, 248, 255, 0.252);
     }
+    .search{
+        padding-top: 50px;
+    }
+    .container2{
+        width: 100%;
+    }
+    .buttons-container{
+        transform: translateY(-35vw);
+        width: 100%;
+    }
+    .buttons-container button{
+        padding: 0px 0px !important;
+        width: 10vh;
+    }
+
+   
 }
 
 @media screen and (max-width: 600px) {
     .tel-box{
         width: 80%;
+    }
+    .src-box div:first-child{
+        width: 35vw;
+    }
+    .src-box{
+        align-items: center;
+    }
+    .src-box p{
+        font-size: 3vw;
     }
 }

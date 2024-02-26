@@ -50,3 +50,20 @@ function resetInterval(){
 
     let interval = setInterval(run, 3000)
 }
+
+let srchBtn = document.getElementById('srch-btn')
+let xSrch = document.getElementById('x-btn')
+
+srchBtn.addEventListener('click', function(){
+    document.querySelector('body').classList.toggle('active-srch')
+})
+xSrch.addEventListener('click', function(){
+    document.querySelector('body').classList.remove('active-srch')
+})
+window.addEventListener('scroll', function(){
+    document.querySelector('body').classList.remove('active-srch')
+})
+
+document.getElementById('menu').addEventListener('click', function(){
+    body.classList.toggle('active')
+})
