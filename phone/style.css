@@ -425,3 +425,67 @@ body.active #menu span:first-child{
 body.active #menu span:last-child{
     transform: rotate(-45deg) translateX(1px);
 }
+
+.phones_boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.phone-box{
+    text-align: center;
+    width: 21vw;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0px;
+}
+.phone-box img{
+    width: 50%;
+}
+.phone-box p{
+    font-size: 13px;
+    width: 60%;
+}
+#mate-series .container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px ;
+}
+#mate-series {
+    background-color: whitesmoke;
+}
+.mate-series img{
+    border-radius: 10px;
+}
+.con-transparent{
+    background-color: transparent !important;
+}
+.mate-phones{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mate-phone {
+    width: 49%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+}
+.mate-phone img{
+    width: 45%;
+}
+.mate-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mate-txt h3{
+    font-size: 3vh;
+}
