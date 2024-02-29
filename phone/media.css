@@ -1,35 +1,4 @@
 @media screen and (max-width: 1300px) {
-    /* nav #container{
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        background-color: white;
-        padding: 0px 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: scroll;
-    }
-    nav{
-        align-items: start;
-        padding: 0;
-    }
-    #container ul{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    #container ul li a{
-        display: flex;
-        flex-direction: column;
-    }
-    #container ul li a::after{
-        content:  '';
-        width: 100%;
-        height: 1px;
-        background-color: rgba(0, 0, 0, 0.155);
-        margin-top: 0;
-    } */
     #container ul{
         display: none;
     }
