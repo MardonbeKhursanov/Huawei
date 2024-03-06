@@ -53,6 +53,12 @@
     .mate-txt p{
         font-size: 1.5vw;
     }
+    .all-phones h3{
+        font-size: 2vw;
+    }
+    .all-phones{
+        justify-content: space-around;
+    }
 }
 @media screen and (max-width: 900px) {
     .header_title img{
@@ -95,6 +101,9 @@
     .mate-txt p{
         font-size: 2vw;
     }
+    .all-phones .box img{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -118,5 +127,14 @@
     }
     .mate-txt p{
         font-size: 2vw  ;
+    }
+    .all-phones{
+        justify-content: space-between;
+    }
+    .all-phones .box img{
+        width: 100%;
+    }
+    .all-phones .box h3{
+        font-size: 2.3vw;
     }
 }
