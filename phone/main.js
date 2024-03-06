@@ -53,14 +53,14 @@ function resetInterval(){
 
 let srchBtn = document.getElementById('srch-btn')
 let xSrch = document.getElementById('x-btn')
-
+let serach = document.querySelector('search')
 srchBtn.addEventListener('click', function(){
     document.querySelector('body').classList.toggle('active-srch')
 })
 xSrch.addEventListener('click', function(){
     document.querySelector('body').classList.remove('active-srch')
 })
-window.addEventListener('scroll', function(){
+serach.addEventListener('scroll', function(){
     document.querySelector('body').classList.remove('active-srch')
 })
 

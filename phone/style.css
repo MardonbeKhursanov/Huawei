@@ -6,6 +6,10 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: whitesmoke;
 }
 .container{
     width: 90%;
@@ -316,12 +320,14 @@ nav ul li a:hover::after{
     padding-top: 20px;
     position: fixed;
     background-color: white;
-    display: none;
+    transform: scale(0);
     z-index: 1;
     height: 100vh;
+    transform-origin: top right;
+    transition: transform .5s linear;
 }
 body.active-srch .search{
-    display: block;
+    transform: scale(1);
 }
 .search .container{
     display: flex;
@@ -488,4 +494,9 @@ body.active #menu span:last-child{
 }
 .mate-txt h3{
     font-size: 3vh;
+}
+#nova-series .container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px ;
 }
